@@ -1,0 +1,26 @@
+/*Folha de estilo style/sass/layout/_menu.css*/
+header  {
+    nav {
+        width: 100%;
+        top: 0;
+        position: fixed;
+        background-color: $PrimaryBlue;
+        ul{
+            li{
+                display: inline;
+                a{
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    margin: 0 0.5rem 0 0.5rem;
+                    color: $PrimaryWhite;
+                     &:hover{
+                         background-color: $SecondaryBlue;
+                         padding: 0.3rem;
+                         color: $PrimaryBlue;
+                         border-radius: .8rem;
+                     }
+                }
+            }
+        }
+    }
+}
