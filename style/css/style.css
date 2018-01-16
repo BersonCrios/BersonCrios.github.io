@@ -438,6 +438,7 @@ header nav {
   top: 0;
   position: fixed;
   background-color: #5C6BC0;
+  height: 3rem;
 }
 header nav ul li {
   display: inline;
@@ -469,6 +470,15 @@ footer p {
 
 /*Folha de estilo style/sass/layout/_imgSocial.css*/
 #social img {
-  display: flex;
   height: 4rem;
+}
+
+main {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+#inicio img {
+  height: 100%;
+  width: 100%;
 }
