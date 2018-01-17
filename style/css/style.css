@@ -469,16 +469,50 @@ footer p {
 }
 
 /*Folha de estilo style/sass/layout/_imgSocial.css*/
-#social img {
+.redessociais {
+  height: 12rem;
+  display: flex;
+  flex-direction: row;
+}
+.redessociais img {
   height: 4rem;
+}
+.redessociais #linkedin {
+  align-self: flex-start;
+}
+.redessociais #github {
+  align-self: flex-start;
+}
+.redessociais #facebook {
+  margin-left: -8rem;
+  align-self: center;
+}
+.redessociais #twitter {
+  align-self: center;
+}
+.redessociais #insta {
+  margin-left: -8rem;
+  align-self: flex-end;
+}
+.redessociais #gp {
+  align-self: flex-end;
 }
 
 main {
   margin-top: 3rem;
   margin-bottom: 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
+/*Folha de estilo style/sass/layout/_imgInicio.css*/
 #inicio img {
   height: 100%;
   width: 100%;
+}
+
+/*Folha de estilo style/sass/layout/_tituloSection.css*/
+section h2 {
+  text-transform: uppercase;
+  font-family: 'Kanit', sans-serif;
 }
