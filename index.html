@@ -14,6 +14,30 @@
 
     <!--[ FONTS EXTERNAS USADAS ]-->
     <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+
+    
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="images/LogoBC2.png">
+  <meta name="theme-color" content="#5C6BC0">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Bakery">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon-precomposed" href="images/LogoBC2.png">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="images/LogoBC2.png">
+  <meta name="msapplication-TileColor" content="#5C6BC0">
+
+  <!-- Configura a url -->
+  <script>
+    if (window.location.protocol != "https:" && window.location.hostname == "bersoncrios.github.io")
+      window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+  </script>
 </head>
 
 <body>
@@ -93,6 +117,8 @@
     <footer>
         <p>2018 &copy; Todos os direitos reservados a Guilherme Berson</p>
     </footer>
+
+    <script src="js/install.js"></script>
 </body>
 
 </html>
