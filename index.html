@@ -15,29 +15,29 @@
     <!--[ FONTS EXTERNAS USADAS ]-->
     <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
 
-    
-  <link rel="manifest" href="manifest.json">
 
-  <!-- Add to homescreen for Chrome on Android -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <link rel="icon" sizes="192x192" href="images/LogoBC2.png">
-  <meta name="theme-color" content="#5C6BC0">
+    <link rel="manifest" href="manifest.json">
 
-  <!-- Add to homescreen for Safari on iOS -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-title" content="Bakery">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <link rel="apple-touch-icon-precomposed" href="images/LogoBC2.png">
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/LogoBC2.png">
+    <meta name="theme-color" content="#5C6BC0">
 
-  <!-- Tile icon for Win8 (144x144 + tile color) -->
-  <meta name="msapplication-TileImage" content="images/LogoBC2.png">
-  <meta name="msapplication-TileColor" content="#5C6BC0">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Bakery">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon-precomposed" href="images/LogoBC2.png">
 
-  <!-- Configura a url -->
-  <script>
-    if (window.location.protocol != "https:" && window.location.hostname == "bersoncrios.github.io")
-      window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
-  </script>
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/LogoBC2.png">
+    <meta name="msapplication-TileColor" content="#5C6BC0">
+
+    <!-- Configura a url -->
+    <script>
+        if (window.location.protocol != "https:" && window.location.hostname == "bersoncrios.github.io")
+            window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+    </script>
 </head>
 
 <body>
@@ -52,10 +52,13 @@
                     <a href="#sobre">Sobre</a>
                 </li>
                 <li>
-                    <a href="blog.html">Blog</a>
+                    <a href="#portifolio">Portifólio</a>
                 </li>
                 <li>
                     <a href="#social">Sócial</a>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
                 </li>
             </ul>
         </nav>
@@ -64,12 +67,12 @@
     <!-- [CORPO PRINCIPAL DO SITE ONDE SERÁ DIVIDIDO EM VÁRIAS SECTIONS] -->
     <main>
         <!-- [SESSÃO INICIAL DO SITE] -->
-        <section id="inicio">
+        <section id="inicio" class="inicio">
             <img src="images/js.jpg" alt="js">
         </section>
 
         <!-- [SESSÃO DE SOBRE O AUTOR DO SITE] -->
-        <section id="sobre">
+        <section id="sobre" class="sobre">
             <h2>Sobre Guilherme Berson</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit expedita aperiam labore nesciunt dolores cumque
                 libero. Maxime quae fugiat, explicabo laudantium pariatur est nemo eveniet cupiditate, officia labore mollitia
@@ -85,12 +88,50 @@
             </p>
         </section>
 
+
+        <!-- [SESSÃO DE PORTIFÓLIO DO AUTOR DO SITE] -->
+        <section id="portifolio" class="portifolio">
+            <h2>Portifólio</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="images/portifolio/encat.PNG" alt="Encat Sefaz">
+                            <div class="card-body">
+                                <h5 class="card-title">Encat</h5>
+                                <p class="card-text">Site desenvolvido durante o estágio na secretária da fazenda, junto da equipe de front end.</p>
+                                <a href="http://encat.sefaz.to.gov.br/" class="btn btn-primary">Visitar Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="images/portifolio/iac.PNG" alt="Instituto de atenção as cidades - UFT">
+                            <div class="card-body">
+                                <h5 class="card-title">IAC - UFT</h5>
+                                <p class="card-text">Site desenvolvido para o instituto de atenção as cidades da universidade estadual do Tocantins</p>
+                                <a href="http://iacuft.org.br/" class="btn btn-primary">Visitar Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="..." alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- [SESSÃO ONDE MOSTRA AS REDES SÓCIAIS DO AUTOR DO SITE] -->
-        <section id="social">
+        <section id="social" class="social">
             <h2>Minha Redes Sóciais</h2>
-
             <div class="redessociais">
-
                 <a id="linkedin" href="https://www.linkedin.com/in/bersoncrios/">
                     <img src="images/logos-redes-sociais/linkedin.png" alt="logo linkedin">
                 </a>
@@ -107,11 +148,12 @@
                     <img src="images/logos-redes-sociais/insta.png" alt="logo insta">
                 </a>
                 <a id="gp" href="https://www.linkedin.com/in/bersoncrios/">
-                    <img  src="images/logos-redes-sociais/google+.png" alt="logo g+">
+                    <img src="images/logos-redes-sociais/google+.png" alt="logo g+">
                 </a>
             </div>
         </section>
     </main>
+
 
     <!-- [RODAPÉ DO SITE] -->
     <footer>
