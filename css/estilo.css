@@ -33,3 +33,7 @@
 .voltar-ao-topo:hover {
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+.meuCarr{
+    height: 50% !important;
+}
