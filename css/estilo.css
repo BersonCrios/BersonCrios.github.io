@@ -15,6 +15,12 @@
     color: #519D9E;
 }
 
+
+.titulo-art{
+    font-size: 30px;
+    color: chartreuse;
+}
+
 .categoria-contato{
     font-weight: bold;
 }
