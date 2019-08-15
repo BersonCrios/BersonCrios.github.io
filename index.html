@@ -1,292 +1,133 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" dir="ltr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
-    <title>BersonCrios - Dev</title>
-
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/estilo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="Content-Language" content="en" />
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="theme-color" content="#4188c9">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <link rel="icon" href="./icone.ico" type="image/x-icon" />
+  <link rel="shortcut icon" type="image/x-icon" href="./icone.ico" />
+  <!-- Generated: 2018-04-06 16:27:42 +0200 -->
+  <title>BersonCrios - Developer</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext">
+  <script src="./assets/js/require.min.js"></script>
+  <script>
+    requirejs.config({
+      baseUrl: '.'
+    });
+  </script>
+  <!-- Dashboard Core -->
+  <link href="./assets/css/dashboard.css" rel="stylesheet" />
+  <script src="./assets/js/dashboard.js"></script>
+  <!-- c3.js Charts Plugin -->
+  <link href="./assets/plugins/charts-c3/plugin.css" rel="stylesheet" />
+  <script src="./assets/plugins/charts-c3/plugin.js"></script>
+  <!-- Google Maps Plugin -->
+  <link href="./assets/plugins/maps-google/plugin.css" rel="stylesheet" />
+  <script src="./assets/plugins/maps-google/plugin.js"></script>
+  <!-- Input Mask Plugin -->
+  <script src="./assets/plugins/input-mask/plugin.js"></script>
 </head>
 
-<body>
-
-    <!--BARRA DE NEVEGAÇÃO-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light menu">
-        <a class="navbar-brand" href="#inicio">
-            <img src="/images/logo.png" width="30" height="30" class="d-inline-block align-top" alt=""> BersonCrios
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#inicio">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#sobre">Sobre
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="https://medium.com/@guilhermeberson" target="_blank">Blog
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#portifolio">Portifólio
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#contato">Contatos
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#dicas">Dicas
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/bersoncrios" target="_blank">Github
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <!--SECTION INICIAL DO SITE -->
-    <section id="inicio" class="inicio">
-        <p class="titulo">Inicio</p>
-        <div id="carouselExampleIndicators" class="carousel slide meuCarr" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <!-- <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <a href="https://medium.com/@guilhermeberson/criando-bot-no-telegram-com-telebot-em-nodejs-2e8072a09b25"
-                        target="_blank"><img class="d-block w-100" src="images/telebot.jpeg" alt="First slide"></a>
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 class="titulo-art">Criando bot no telegram com telebot em Nodejs</h5>
-                        <p>Neste artigo, irei mostrar o básico para a criação de um bot para o telegram, com o uso do
-                            pacote npm telebot
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-    </section>
-
-    <!--SECTION SOBRE DO SITE -->
-    <section id="sobre">
-        <h1 class="titulo">Sobre</h1>
-
-        <div class="jumbotron">
-            <h1 class="display-4">Guilherme Taveira Berson</h1>
-            <p class="lead">Um entusiasta de tecnologias mobile e web</p>
-            <hr class="my-4">
-            <p>Olá, prazer, me chamo Guilherme Taveira Berson, nasci na cidade de Tocantinópolis no norte do estado do
-                tocantins, tenho 22 anos de idade.</p>
-            <p>Sou formado em sistemas de informação pela universidade estadual do tocantins e atualmente estou cursando
-                uma pós graduação
-                em desenvolvimento de aplicações mobile pela universidade católica do tocantins.</p>
-
-    </section>
-
-    <!--SECTION PORTIFÓLIO DO SITE -->
-    <section id="portifolio">
-        <h1 class="titulo">Portifólio</h1>
+<body class="">
+  <div class="page">
+    <div class="page-main">
+      <div class="header py-4">
         <div class="container">
-            <div class="row">
-                <div class="col job">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="images/iac.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Instituto de Atenção as Cidades - UFT</h5>
-                            <p class="card-text">Site feito para o instituto de atenção as cidade, que é um projeto da
-                                Universidade Estadual do Tocantins.</p>
-                            <a href="https://www.iacuft.org.br" target="_blank" class="btn btn-primary">Ir para Site</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col job">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="images/encat.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Encat Sefaz</h5>
-                            <p class="card-text">Site feito em conjunto com uma equipe na secretraria da fazenda do
-                                Tocantins, no meu período de estágio.</p>
-                            <a href="http://encat.sefaz.to.gov.br" target="_blank" class="btn btn-primary">Ir para
-                                Site</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col job">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="images/urpay.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Aplicativo Android Urpay Br</h5>
-                            <p class="card-text">Aplicativo android feito em conjunto com a equipe de desenvolvimento de
-                                aplicações móveis na Urpay Brasil.</p>
-                            <a href="https://play.google.com/store/apps/details?id=br.com.urpay&hl=pt_BR"
-                                target="_blank" class="btn btn-primary">Ver na play store</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col job">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="images/itsdone.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Aplicativo Its Done!</h5>
-                            <p class="card-text"> Aplicativo com a finalidade de ajudar na organização de tarefas e
-                                realização de anotações.</p>
-                            <a href="https://play.google.com/store/apps/details?id=io.github.berson.itsdone"
-                                target="_blank" class="btn btn-primary">Ver na play store</a>
-                        </div>
-                    </div>
-                </div>
+          <div class="d-flex">
+            <a class="header-brand" href="./index.html">
+              <img src="./assets/imgs/icone.png" class="header-brand-img" alt="bc logo">
+            </a>
+            <div class="d-flex order-lg-2 ml-auto">
+              <div class="nav-item d-none d-md-flex">
+                <p class="btn btn-sm btn-outline-primary" target="_blank">Berson Crios - Developer</a>
+              </div>
             </div>
+            <a href="#" class="header-toggler d-lg-none ml-3 ml-lg-0" data-toggle="collapse"
+              data-target="#headerMenuCollapse">
+              <span class="header-toggler-icon"></span>
+            </a>
+          </div>
         </div>
-    </section>
-
-    <!--SECTION CONTATO DO SITE -->
-    <section id="contato">
-        <h1 class="titulo">Contatos</h1>
-        <div class="jumbotron">
-            <h1 class="display-4">Entre em contato</h1>
-            <p class="lead">Meus contatos</p>
-            <hr class="my-4">
-            <p class="categoria-contato">Emails</p>
-            <ul>
-                <li>bersoncrios@gmail.com</li>
-                <li>bersondev@gmail.com</li>
-                <li>bersondev@outlook.com</li>
-            </ul>
-
-            <p class="categoria-contato">Telefone</p>
-            <ul>
-                <li>+55(63)9 9263-3888</li>
-            </ul>
+      </div>
+      <div class="header collapse d-lg-flex p-0" id="headerMenuCollapse">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-3 ml-auto">
+              <form class="input-icon my-3 my-lg-0">
+                <input type="search" class="form-control header-search" placeholder="Search&hellip;" tabindex="1">
+                <div class="input-icon-addon">
+                  <i class="fe fe-search"></i>
+                </div>
+              </form>
+            </div>
+            <div class="col-lg order-lg-first">
+              <ul class="nav nav-tabs border-0 flex-column flex-lg-row">
+                <li class="nav-item">
+                  <a href="./index.html" class="nav-link active"><i class="fe fe-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"><i class="fe fe-bookmark"></i>
+                    Sobre</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link"><i class="fe fe-book"></i>
+                    Blog</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link"><i class="fe fe-terminal"></i>
+                    Portifólio </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link"><i class="fe fe-phone"></i> Contatos</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link"><i class="fe fe-info"></i> Dicas</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link"><i class="fe fe-github"></i> Github</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
+      <div class="my-3 my-md-5">
+        <div class="container">
+          <div class="page-header">
+            <h1 class="page-title">
+              Home
+            </h1>
+          </div>
 
-    <!--SECTION DICAS DO SITE -->
-    <section id="dicas">
-        <h1 class="titulo">Dicas</h1>
-        <div class="jumbotron">
-            <h1 class="display-4">Dicas em Tweets</h1>
-            <p class="lead">Dicas que agreguem conhecimento ou simplesmente que o divirta, aproveite!</p>
-            <hr class="my-4">
-
-
+          <footer class="footer">
             <div class="container">
-                <div class="row">
-                    <div class="col job">
-                        <blockquote class="twitter-tweet" data-lang="pt">
-                            <p lang="und" dir="ltr">Introdução ao RX Java com Kotlin by Nelson Glauber <a
-                                    href="https://t.co/Q4x6XsDB6y">https://t.co/Q4x6XsDB6y</a></p>&mdash; Guilherme
-                            Berson (@BersonCrios) <a
-                                href="https://twitter.com/BersonCrios/status/1136263822166110213?ref_src=twsrc%5Etfw">5
-                                de junho de 2019</a>
-                        </blockquote>
-                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
+              <div class="row align-items-center flex-row-reverse">
+                <div class="col-auto ml-lg-auto">
+                  <div class="row align-items-center">
+                    <div class="col-auto">
+                      <p class="btn btn-outline-primary btn-sm">Berson Crios - Developer</p>
                     </div>
-
-                    <div class="col job">
-                        <blockquote class="twitter-tweet" data-lang="pt">
-                            <p lang="pt" dir="ltr">“O que é Design Thinking e como aplicar” by Felipe Melo Guimarães <a
-                                    href="https://t.co/si6w2p2jky">https://t.co/si6w2p2jky</a></p>&mdash; Guilherme
-                            Berson (@BersonCrios) <a
-                                href="https://twitter.com/BersonCrios/status/1117876355180318721?ref_src=twsrc%5Etfw">15
-                                de abril de 2019</a>
-                        </blockquote>
-                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-                    </div>
+                  </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <a href="#" class="voltar-ao-topo">Voltar ao topo</a>
-
-    <!-- FOOTER DO SITE -->
-    <footer class="page-footer font-small cyan darken-3 rodape">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 py-5">
-                    <div class="mb-5 flex-center">
-                        <!-- Facebook -->
-                        <a class="fb-ic" href="https://www.facebook.com/BersonCrios" target="_blank">
-                            <i class="fa fa-facebook fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                        </a>
-                        <!-- Twitter -->
-                        <a class="tw-ic" href="https://twitter.com/BersonCrios" target="_blank">
-                            <i class="fa fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                        </a>
-                        <!-- Google +-->
-                        <a class="gplus-ic" href="https://plus.google.com/u/0/115062144044813830953" target="_blank">
-                            <i class="fa fa-google-plus fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                        </a>
-                        <!--Linkedin -->
-                        <a class="li-ic" href="https://www.linkedin.com/in/bersoncrios/" target="_blank">
-                            <i class="fa fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                        </a>
-                        <!--Instagram-->
-                        <a class="ins-ic" href="http://instagram.com/bersoncrios/" target="_blank">
-                            <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                        </a>
-                        <!--Pinterest-->
-                        <a class="pin-ic" href="https://br.pinterest.com/bersondev/" target="_blank">
-                            <i class="fa fa-pinterest fa-lg white-text fa-2x"> </i>
-                        </a>
-                    </div>
+                <div class="col-12 col-lg-auto mt-3 mt-lg-0 text-center">
+                  Copyright © 2019 <a href="https://github.com/BersonCrios">Guilherme Berson</a>. All rights reserved.
                 </div>
+              </div>
             </div>
+          </footer>
         </div>
-        <div class="footer-copyright text-center py-3">© 2019 Copyright: Guilherme Taveira Berson - Web & Mobile dev
-        </div>
-    </footer>
-
-
-
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
-    <script src="js/script.js"></script>
 </body>
 
 </html>
