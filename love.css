@@ -3,7 +3,7 @@ body{
   }
   .container{
 	background:pink;
-	position: absolute;
+		position: absolute;
 	left: 25%;
 	transform: translateX(-25%);
 	top: 50%;
@@ -11,10 +11,10 @@ body{
   }
   .shelves{
 	position: absolute;
-	left: 25%;
-	transform: translateX(-25%);
-	top: 50%;
-	transform: translateY(-50%);
+    left: -90%;
+    transform: translateX(-25%);
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .planta1{
@@ -95,3 +95,9 @@ body{
 	 transform:rotate(30deg);
 	margin:-8px 9px
   }
+
+  p {
+    color: #9d86e1;
+    font-style: oblique;
+    font-weight: bolder;
+}
