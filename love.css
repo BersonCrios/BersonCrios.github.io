@@ -1,32 +1,18 @@
 body{
-	background:black;
+	background:pink;
   }
   .container{
-	position:relative;
-	width:800px;
-	height:600px;
-	background:#D9D7DD;
-	margin:90px auto;
+	background:pink;
   }
   .shelves{
-	position:relative;
-	margin:0 -9px;
+	position: absolute;
+	left: 25%;
+	transform: translateX(-25%);
+	top: 50%;
+	transform: translateY(-50%);
   }
-  .base,.base3{
-	position:absolute;
-	width:430px;
-	height:25px;
-	background:#7caebc;
-	}
-  .base{margin:271px 192px;}
-  .base3{margin:470px 192px;}
-  .base::before, .base::after,.base3::before, .base3::after{
-	content:"";
-	position:absolute;
-	width:21px;
-	height:50px;
-	background:#7caebc;
-	}
+ 
+  
   .base::before,.base3::before{margin:21px 21px;}
   .base::after,.base3::after{margin:21px 390px;}
   .shadow, .shadow::before{
