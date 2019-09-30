@@ -72,7 +72,7 @@ p.lead {
 }
 
 .social-icons a:hover {
-  background-color: #BD5D38;
+  background-color: #EFFFE9;
 }
 
 .dev-icons {
@@ -160,17 +160,17 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: #BD5D38 !important;
+  background-color: #EFFFE9 !important;
 }
 
 .text-primary {
-  color: #BD5D38 !important;
+  color: #EFFFE9 !important;
 }
 
 a {
-  color: #BD5D38;
+  color: #EFFFE9;
 }
 
 a:hover, a:focus, a:active {
-  color: #824027;
+  color: #EFFFE9;
 }
