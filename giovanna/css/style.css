@@ -1,0 +1,23 @@
+.menu{
+    list-style-type: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+button{
+    background-color: #A7D9C9;
+    color: #FFFFFF;
+    border: 1px solid #A7D9C9; 
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.logo{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
