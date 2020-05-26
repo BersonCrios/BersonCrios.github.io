@@ -10,3 +10,10 @@ h1{
     left: 50%;
     transform: translateX(-50%);
 }
+
+@media (max-width: 425px) {
+    h1{
+        font-size: 130px;
+        margin-top: 10%;
+    }
+}
