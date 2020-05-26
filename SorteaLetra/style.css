@@ -1,0 +1,22 @@
+body{
+    background-color:darkkhaki;
+}
+h1{
+    font-size: 300px;
+    position: absolute;
+    top: 0;
+    color: darkorchid;
+    margin-top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+button{
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: darkslategrey;
+    color: floralwhite;
+    border: none;
+}
