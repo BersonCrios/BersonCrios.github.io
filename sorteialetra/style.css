@@ -10,13 +10,3 @@ h1{
     left: 50%;
     transform: translateX(-50%);
 }
-
-button{
-    padding: 10px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: darkslategrey;
-    color: floralwhite;
-    border: none;
-}
